@@ -1,26 +1,26 @@
 # ONC RPC Client–Server System Modification
 
 ## 🧭 Overview
-This project modifies a basic **ONC RPC (Open Network Computing Remote Procedure Call)** client–server system written in C. Starting from code generated via `rpcgen`, unnecessary filler variables were removed, protocol stubs were rebuilt, and correct multi-terminal client–server communication was validated on Linux.
+This project implements an **ONC RPC (Open Network Computing Remote Procedure Call)** client–server system in C. The system defines a remote procedure interface, implements the corresponding client and server logic, and validates correct multi-terminal communication on Linux.
 
-The goal of this project was to understand how RPC interfaces, generated stubs, and client–server execution interact at the systems level.
+The project demonstrates end-to-end implementation of an RPC-based client–server workflow and explores how RPC interfaces, protocol stubs, and runtime execution interact at the systems level.
 
 ## ⚙️ Project Background
 
-ONC RPC allows a client to invoke procedures on a remote server as if they were local function calls. The system consists of:
-- An RPC interface definition (`.x` file)
-- Generated client and server stubs
-- Application-level client and server logic
+ONC RPC enables a client to invoke procedures on a remote server as if they were local function calls. This system consists of:
+- A defined RPC interface
+- Client and server protocol stubs
+- Application-level client and server implementations
 
-This project focuses on **modifying and rebuilding** an existing RPC setup rather than creating one from scratch.
+The project focuses on implementing and refining a complete RPC-based client–server system, including interface definition, client/server behavior, and runtime validation.
 
-## 🔧 What Was Modified
+## 🔧 Implementation Details
 
-- Cleaned up `rpcgen`-generated code by removing unnecessary filler variables
-- Rebuilt RPC protocol stubs after interface changes
-- Ensured consistency between interface definitions and generated code
-- Verified correct request/response behavior across multiple terminals
-- Confirmed stable client–server communication under Linux execution
+- Designed and implemented the RPC interface and associated data structures
+- Implemented client-side and server-side logic for remote procedure invocation
+- Integrated protocol stubs to support RPC communication
+- Validated correct request–response behavior across multiple terminals
+- Ensured stable client–server execution under Linux
 
 ## 📁 Files
 
