@@ -1,4 +1,4 @@
-# ONC RPC Client–Server System Modification
+# ONC RPC Client Server System
 
 ## 🧭 Overview
 This project implements an **ONC RPC (Open Network Computing Remote Procedure Call)** client–server system in C. The system defines a remote procedure interface, implements the corresponding client and server logic, and validates correct multi-terminal communication on Linux.
